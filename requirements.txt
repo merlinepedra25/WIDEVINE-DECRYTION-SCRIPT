@@ -1,0 +1,11 @@
+PyYAML
+urllib3
+tqdm
+requests
+pycaption
+colorama
+protobuf
+pycryptodomex
+pycountry
+beautifulsoup4>=4.8.1
+xmltodict

@@ -1,0 +1,9 @@
+# taken from web application, firefox, linux
+device_api_key: ZGlzbmV5JmJyb3dzZXImMS4wLjA.Cu56AgSfBTDag5NiRA81oLHkDZfu5L3CKadnefEAY84
+
+endpoints:
+  login: https://edge.bamgrid.com/idp/login
+  grant: https://edge.bamgrid.com/accounts/grant
+  devices: https://edge.bamgrid.com/devices
+  token: https://edge.bamgrid.com/token
+  licence: https://edge.bamgrid.com/widevine/v1/obtain-license

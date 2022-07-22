@@ -1,0 +1,202 @@
+endpoints:
+  manifest: https://www.netflix.com/api/msl/cadmium/manifest
+  licence: https://www.netflix.com/api/msl/cadmium/license
+profiles:
+  video:
+    h264:
+      bpl: [
+        # Base Profile
+        'playready-h264bpl30-dash',  # L3.0
+        'playready-h264bpl31-dash',  # L3.1
+        'playready-h264bpl40-dash',  # L4.0
+        'playready-h264bpl41-dash'  # L4.1
+      ]
+      mpl: [
+        # Main Profile
+        'playready-h264mpl30-dash',  # L3.0
+        'playready-h264mpl31-dash',  # L3.1
+        'playready-h264mpl40-dash',  # L4.0
+        'playready-h264mpl41-dash'  # L4.1
+      ]
+      hpl: [
+        # High Profile
+        'playready-h264hpl22-dash',  # L2.2
+        'playready-h264hpl30-dash',  # L3.0
+        'playready-h264hpl31-dash',  # L3.1
+        'playready-h264hpl40-dash',  # L4.0
+        'playready-h264hpl41-dash'  # L4.1
+      ]
+    h265:
+      sdr: [
+        # Stadard-dynamic-range
+        'hevc-main10-L30-dash-cenc',  # L3.0
+        'hevc-main10-L30-dash-cenc-prk',  # L3.0
+        'hevc-main10-L31-dash-cenc',  # L3.1
+        'hevc-main10-L31-dash-cenc-prk',  # L3.1
+        'hevc-main10-L40-dash-cenc',  # L4.0
+        'hevc-main10-L40-dash-cenc-prk',  # L4.0
+        'hevc-main10-L41-dash-cenc',  # L4.1
+        'hevc-main10-L41-dash-cenc-prk',  # L4.1
+        'hevc-main10-L50-dash-cenc',  # L5.0
+        'hevc-main10-L50-dash-cenc-prk',  # L5.0
+        'hevc-main10-L51-dash-cenc',  # L5.1
+        'hevc-main10-L51-dash-cenc-prk'  # L5.1
+      ]
+      hdr:
+        hdr10: [
+          'hevc-hdr-main10-L30-dash-cenc',  # L3.0
+          'hevc-hdr-main10-L30-dash-cenc-prk',  # L3.0 - Per Resolution Key
+          'hevc-hdr-main10-L31-dash-cenc',  # L3.1
+          'hevc-hdr-main10-L31-dash-cenc-prk',  # L3.1 - Per Resolution Key
+          'hevc-hdr-main10-L40-dash-cenc',  # L4.0
+          'hevc-hdr-main10-L40-dash-cenc-prk',  # L4.0 - Per Resolution Key
+          'hevc-hdr-main10-L41-dash-cenc',  # L4.1
+          'hevc-hdr-main10-L41-dash-cenc-prk',  # L4.1 - Per Resolution Key
+          'hevc-hdr-main10-L50-dash-cenc',  # L5.0
+          'hevc-hdr-main10-L50-dash-cenc-prk',  # L5.0 - Per Resolution Key
+          'hevc-hdr-main10-L51-dash-cenc',  # L5.1
+          'hevc-hdr-main10-L51-dash-cenc-prk'  # L5.1 - Per Resolution Key
+        ]
+        dolbyvision:
+          DV1: [
+            'hevc-dv-main10-L30-dash-cenc',  # L3.0
+            'hevc-dv-main10-L30-dash-cenc-prk',  # L3.0 - Per Resolution Key
+            'hevc-dv-main10-L31-dash-cenc',  # L3.1
+            'hevc-dv-main10-L31-dash-cenc-prk',  # L3.1 - Per Resolution Key
+            'hevc-dv-main10-L40-dash-cenc',  # L4.0
+            'hevc-dv-main10-L40-dash-cenc-prk',  # L4.0 - Per Resolution Key
+            'hevc-dv-main10-L41-dash-cenc',  # L4.1
+            'hevc-dv-main10-L41-dash-cenc-prk',  # L4.1 - Per Resolution Key
+            'hevc-dv-main10-L50-dash-cenc',  # L5.0
+            'hevc-dv-main10-L50-dash-cenc-prk',  # L5.0 - Per Resolution Key
+            'hevc-dv-main10-L51-dash-cenc',  # L5.1
+            'hevc-dv-main10-L51-dash-cenc-prk'  # L5.1 - Per Resolution Key
+          ]
+          DV5: [
+            'hevc-dv5-main10-L30-dash-cenc',  # L3.0
+            'hevc-dv5-main10-L30-dash-cenc-prk',  # L3.0 - Per Resolution Key
+            'hevc-dv5-main10-L31-dash-cenc',  # L3.1
+            'hevc-dv5-main10-L31-dash-cenc-prk',  # L3.1 - Per Resolution Key
+            'hevc-dv5-main10-L40-dash-cenc',  # L4.0
+            'hevc-dv5-main10-L40-dash-cenc-prk',  # L4.0 - Per Resolution Key
+            'hevc-dv5-main10-L41-dash-cenc',  # L4.1
+            'hevc-dv5-main10-L41-dash-cenc-prk',  # L4.1 - Per Resolution Key
+            'hevc-dv5-main10-L50-dash-cenc',  # L5.0
+            'hevc-dv5-main10-L50-dash-cenc-prk',  # L5.0 - Per Resolution Key
+            'hevc-dv5-main10-L51-dash-cenc',  # L5.1
+            'hevc-dv5-main10-L51-dash-cenc-prk'  # L5.1 - Per Resolution Key
+          ]
+    vp9:
+      p0: [
+        'vp9-profile0-L30-dash-cenc',  # L3.0
+        'vp9-profile0-L30-dash-cenc-prk',  # L3.0 - Per Resolution Key
+        'vp9-profile0-L31-dash-cenc',  # L3.1
+        'vp9-profile0-L31-dash-cenc-prk',  # L3.1 - Per Resolution Key
+        'vp9-profile0-L40-dash-cenc',  # L4.0
+        'vp9-profile0-L40-dash-cenc-prk',  # L4.0 - Per Resolution Key
+        'vp9-profile0-L41-dash-cenc',  # L4.1
+        'vp9-profile0-L41-dash-cenc-prk'  # L4.1 - Per Resolution Key
+      ]
+      p1: [
+        'vp9-profile1-L30-dash-cenc',  # L3.0
+        'vp9-profile1-L30-dash-cenc-prk',  # L3.0 - Per Resolution Key
+        'vp9-profile1-L31-dash-cenc',  # L3.1
+        'vp9-profile1-L31-dash-cenc-prk',  # L3.1 - Per Resolution Key
+        'vp9-profile1-L40-dash-cenc',  # L4.0
+        'vp9-profile1-L40-dash-cenc-prk',  # L4.0 - Per Resolution Key
+        'vp9-profile1-L41-dash-cenc',  # L4.1
+        'vp9-profile1-L41-dash-cenc-prk'  # L4.1 - Per Resolution Key
+      ]
+      p2: [
+        'vp9-profile2-L30-dash-cenc',  # L3.0
+        'vp9-profile2-L30-dash-cenc-prk',  # L3.0 - Per Resolution Key
+        'vp9-profile2-L31-dash-cenc',  # L3.1
+        'vp9-profile2-L31-dash-cenc-prk',  # L3.1 - Per Resolution Key
+        'vp9-profile2-L40-dash-cenc',  # L4.0
+        'vp9-profile2-L40-dash-cenc-prk',  # L4.0 - Per Resolution Key
+        'vp9-profile2-L41-dash-cenc',  # L4.1
+        'vp9-profile2-L41-dash-cenc-prk',  # L4.1 - Per Resolution Key
+      ]
+    av1: [
+      'av1-main-L30-dash-cbcs',  # L3.0
+      'av1-main-L30-dash-cbcs-prk',  # L3.0 - Per Resolution Key
+      'av1-main-L31-dash-cbcs',  # L3.1
+      'av1-main-L31-dash-cbcs-prk',  # L3.1 - Per Resolution Key
+      'av1-main-L40-dash-cbcs',  # L4.0
+      'av1-main-L40-dash-cbcs-prk',  # L4.0 - Per Resolution Key
+      'av1-main-L41-dash-cbcs',  # L4.1
+      'av1-main-L41-dash-cbcs-prk',  # L4.1 - Per Resolution Key
+      'av1-main-L50-dash-cbcs',  # L5.0
+      'av1-main-L50-dash-cbcs-prk',  # L5.0 - Per Resolution Key
+      'av1-main-L51-dash-cbcs',  # L5.1
+      'av1-main-L51-dash-cbcs-prk',  # L5.1 - Per Resolution Key
+    ]
+  audio:
+    aac: [
+      'heaac-2-dash',  # AAC2.0
+      'heaac-5.1-dash'  # AAC5.1
+    ]
+    vorb: [
+      'playready-oggvorbis-5-dash',  # VORB5.1?
+      'playready-oggvorbis-2-dash'  # VORB2.0?
+    ]
+    dolby: [
+      'dd-5.1-dash',  # DD5.1
+      'ddplus-2.0-dash',  # DDP2.0
+      'ddplus-5.1-dash',  # DDP5.1
+      'ddplus-5.1hq-dash',  # DDP5.1 (640kbps)
+      'ddplus-atmos-dash',  # DDP+Atmos
+    ]
+  subtitles: [
+    # 'dfxp-ls-sdh',
+    # 'simplesdh',
+    # 'nflx-cmisc',
+    'webvtt-lssdh-ios8',
+    # 'webvtt-lssdh-ios'
+    # 'BIF240',
+    # 'BIF320'
+  ]
+
+# -------------------------#
+#      Information        #
+# -------------------------#
+# Changing ESN:
+# When you change ESN, the msl.bin needs to be deleted and re-made.
+# MPL:
+# So MPL is weird to get, not all ESN's let you have it.
+# Currently the only way I know how to get MPL is by:
+# chromecdm903 + pixel esn + widevine key_exchange e2e method = MPL
+# Apparently any android esn might work
+# Rumors of netflix logging this for a honeypot!
+# ESN List:
+# Example 30 character random: FL87J429R65398Y5PN1R9QAYPMLGDU
+# Fallback (Default)                    - WWW-BROWSE-{A-Z0-9}{30}
+# [Chrome]                              - NFCDCH-??-{A-Z0-9}{30}
+# [Firefox]                             - NFCDFF-??-{A-Z0-9}{30}
+# [Opera]                               - NFCDOP-??-{A-Z0-9}{30}
+# [Safari]                              - NFCDHSF-??-{A-Z0-9}{30}
+# [Internet Explorer] Generic IE        - NFCDIE-01-{A-Z0-9}{30}
+# [Internet Explorer] Edge              - NFCDIE-02-{A-Z0-9}{30}
+# [Internet Explorer] Chromium Edge     - NFCDIE-03-{A-Z0-9}{30}
+# [Internet Explorer] Chromium Edge Mac - NFCDIE-04-{A-Z0-9}{30}
+# [Android] Samsung Galaxy S8/G950F     - NFANDROID1-PRV-P-SAMSUSM-G950F-7169-0BF9A7BFD181989B39FB8FD4845F4E1A0713D4F8EFB93E183118F21A52D77A7D2
+# [Android] Xiami Mi 9 SE               - NFANDROID1-PRV-P-XIAOMMI=9=SE-12034-6EA8A15D39427309D0A97686A1A315C6A0ABFE46BECD14BB740EC56C65168E44
+# [Android] Google Pixel                - NFANDROID1-PRV-P-GOOGLPIXEL-6720-6EA8A15D39427309D0A97686A1A315C6A0ABFE46BECD14BB740EC56C65168E72
+# ??????????????
+# RANDOM-13184FEF-8ABF-4BBA-B995-E07DD7533917
+# SLW32-FM2HHMHHLUL5JZR1PXTGF4RJ74
+# SONY-13BDEPG2004N-6QX4NSSV5G5QA5
+# PCBD1100040613590113152185597989
+# NFPS3-001-6CDUGNUL8Y7UZUQEJ87JX17VM
+# NFVITA-01-6CDUGNUL8Y7UZUQEJ87JX17VM
+# NFAPPL-02-IPHONE8=4-736EB5005784C5D8F6AC495DEB21B4E6A97E52AA1CCAA572AF8C0E7DCBC21955
+# NFAPPL-01-IPAD4=4-24F01EB5F949FA979DA385F026521EF40F26882FD318F01CC68D10A554887E12
+# NFAPPL-D1-IPAD3=4-5E466F974D24EA3853A21720C67D64D3DA772EE7C991A01E2F4853FCC732BBEB
+# NFAPPL-02-IPHONE7=1-6BA4505AEE94C292946D4601110559A1F1A55C6CB6BCAF29E05456F67C666426
+# NFANDROID1-PRV-P-GOOGLPIXEL-6720-6EA8A15D39427309D0A97686A1A315C6A0ABFE46BECD14BB740EC56C65168E72
+# NFANDROID2-PRV-AIRTELHYBRIDSTB-LGE==SH960S-AT-6498-A637C5E932201AC90BB07D3D9F526CEFE310BC3B5FE837F1EF567DD3C3D526A0
+# NFANDROID1-PRV-P-L3-SAMSUSM-N920G-4445-0FF9C880F70786352021D3A330AB57765263070EB3D5238608DCA67FE7D75D942
+# NFANDROID1-PVR-P-MOTORMOTO=X4-7463-08CBC1792B4AC7987DD1D972AA31C316D6EB612076FAA7E2D633E240E07D31E08
+# NFANDROID2-PRV-SONYANDROIDTV20154K-SONY=BRAVIA=4K=2015-6027-2AD853C75CB104FCA1D86FE35E778B3F1F78906184DE5081CFA22D92ED1E56E6
+# NFANDROID2-PRV-VOLVER-MGK000000000000066-613E22D12F61DC5BA0B7D3E8854B89CC-7C347928C5AEE7AC518A2194633CE0CD2BE07D889AAFEF2CCC695DBCBD3E1088
+# NFANDROID1-MOTORAOSP=ON=SHAMUS-84BE7ED595DBC71300AC45405DC0BA0FABD9D8ABBF15C7F7685968977FD38C88

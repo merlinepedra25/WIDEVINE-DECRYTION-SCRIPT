@@ -1,0 +1,36 @@
+device_type: AOAGZA014O5RE
+
+endpoints:
+  browse: https://{base_url}/cdp/catalog/Browse?firmware=1&deviceTypeID={deviceTypeID}&deviceID={deviceID}&format=json&version=2&formatVersion=3&marketplaceId={marketplace_id}&IncludeAll=T&AID=T&version=2&SeasonASIN={series_asin}&Detailed=T&tag=1&ContentType=TVEpisode,MOVIE&IncludeBlackList=T&NumberOfResults=1000&StartIndex=0
+  playback: https://{base_url}/cdp/catalog/GetPlaybackResources?asin={asin}&consumptionType=Streaming&desiredResources=AudioVideoUrls%2CSubtitleUrls&deviceTypeID={deviceTypeID}&deviceID={deviceID}&firmware=1&marketplaceID={marketplace_id}&resourceUsage=CacheResources&videoMaterialType=Feature&operatingSystemName=Windows&operatingSystemVersion=10.0&customerID={customer_id}&token={token}&deviceDrmOverride=CENC&deviceStreamingTechnologyOverride=DASH&deviceProtocolOverride=Https&deviceBitrateAdaptationsOverride={bitrate}&audioTrackId=all&titleDecorationScheme=primary-content&deviceVideoCodecOverride={profile}&clientId={client_id}
+  licence: https://{base_url}/cdp/catalog/GetPlaybackResources?asin={asin}&consumptionType=Streaming&desiredResources=Widevine2License&deviceTypeID={deviceTypeID}&deviceID={deviceID}&firmware=1&marketplaceID={marketplace_id}&resourceUsage=ImmediateConsumption&videoMaterialType=Feature&operatingSystemName=Windows&operatingSystemVersion=10.0&customerID={customer_id}&token={token}&deviceDrmOverride=CENC&deviceStreamingTechnologyOverride=DASH
+
+regions:
+  us:
+    base: www.amazon.com
+    base_manifest: atv-ps.amazon.com
+    marketplace_id: ATVPDKIKX0DER
+    client_id: f22dbddb-ef2c-48c5-8876-bed0d47594fd
+    account_token: 9a7208e26fa8a5d195698a8f88f9e4be
+    account_id: A1SDJQ7W4W2U7U
+  uk:
+    base: www.amazon.co.uk
+    base_manifest: atv-ps-eu.amazon.co.uk
+    marketplace_id: A2IR4J4NTCP2M5  # A1F83G8C2ARO7P is also another marketplace_id
+    client_id: f22dbddb-ef2c-48c5-8876-bed0d47594fd
+    account_token: 9a7208e26fa8a5d195698a8f88f9e4be
+    account_id: A1SDJQ7W4W2U7U
+  de:
+    base: www.amazon.de
+    base_manifest: atv-ps-eu.amazon.de
+    marketplace_id: A1PA6795UKMFR9
+    client_id: f22dbddb-ef2c-48c5-8876-bed0d47594fd
+    account_token: 9a7208e26fa8a5d195698a8f88f9e4be
+    account_id: A1SDJQ7W4W2U7U
+  jp:
+    base: www.amazon.co.jp
+    base_manifest: atv-ps-fe.amazon.co.jp
+    marketplace_id: A1VC38T7YXB528
+    client_id: f22dbddb-ef2c-48c5-8876-bed0d47594fd
+    account_token: 9a7208e26fa8a5d195698a8f88f9e4be
+    account_id: A1SDJQ7W4W2U7U
